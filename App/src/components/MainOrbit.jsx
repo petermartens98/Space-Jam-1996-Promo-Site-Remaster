@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components'
 import SpaceJamLogo from '../assets/SpaceJamLogo.png'
 import BBall from '../assets/planets/BBall.png'
@@ -21,6 +21,7 @@ const Container = styled.div`
   align-items: center;
   max-width: 1400px;
   margin-top: 250px;
+
 `;
 
 const SpaceJamLogoContainer = styled.div`
@@ -106,9 +107,23 @@ const planetConfigurations = [
 ];
 
 const MainOrbit = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+  }, []);
+  let orbitRadiusX;
+  let orbitRadiusY;
   const planetCount = 11;
-  const orbitRadiusX = 200;
-  const orbitRadiusY = 200;
+  if (screenWidth > 500){
+    orbitRadiusX = 200;
+    orbitRadiusY = 200;
+  } else {
+    orbitRadiusX = 150;
+    orbitRadiusY = 220;
+  }
+
   const orbitAngleIncrement = 360 / planetCount;
 
   const planets = [];
