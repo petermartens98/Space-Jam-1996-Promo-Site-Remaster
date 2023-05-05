@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b2e2698.css",
+    "main.js": "/static/js/main.bed931dd.js",
+    "static/media/SpaceBackground.png": "/static/media/SpaceBackground.e7c999a6726322eb1966.png",
+    "static/media/SpaceJamLogo.png": "/static/media/SpaceJamLogo.2407d1cc939c177d950d.png",
+    "index.html": "/index.html",
+    "main.2b2e2698.css.map": "/static/css/main.2b2e2698.css.map",
+    "main.bed931dd.js.map": "/static/js/main.bed931dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b2e2698.css",
+    "static/js/main.bed931dd.js"
+  ]
+}
