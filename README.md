@@ -1,5 +1,5 @@
 # SpaceJam 1996 Promo Site React Clone
-### Deployment: https://spacejamclone.uc.r.appspot.com/
+#### Current under development ... come back soon
 ### About:
 Frontend clone built in React, inspired by the 1996 Space Jam promo site
 ### Web Screenshot V1:
